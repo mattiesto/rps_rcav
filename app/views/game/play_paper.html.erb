@@ -32,10 +32,31 @@
         <img class="img-responsive" src="http://localhost:3000/assets/images/scissors.png">
         <% elsif computer_move == "paper" %>
         <img class="img-responsive" src="http://localhost:3000/assets/images/paper.png">
+        <% end %>
       </div>
     </div>
   </div>
 </div>
 
-<% end %>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="well text-center">
+      <h1>
+        <% if computer_move == "scissors" %>
+        <span class="label label-danger">
+          You Lose.
+        </span>
+        <% elsif computer_move == "rock" %>
+        <span class="label label-success">
+          You Win!
+        </span>
+        <% elsif computer_move == "paper" %>
+        <span class="label label-warning">
+          You Tied!
+        </span>
+        <% end %>
+      </h1>
+    </div>
+  </div>
 </div>
